@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title> Test</title>
+    </head>
+
+   <body>
+   		<form action="hhtp://www.pace.lk/form-data.php" method="post">
+   	<fieldset>
+   		<legend>Personal Details</legend>
+   			<label for="firstname">First Name </label>
+   			<input id="firstname" name="firstname" type="text">
+
+   			<label for="lastname">Last Name</label>
+   			<input id="lastname" name="lastname" type="text">
+
+   			Gender
+   			<label for="gender_male">Male</label>
+   			<input id="gender_male" checked name="gender" type="radio" value="male">
+
+   			<label for="gender_female">Female</label>
+   			<input id="gender_female" name="gender" type="radio" value="female">
+    </fieldset>
+
+    <fieldset>
+    	<legend>Credentials</legend>
+   			<label for="password">password </label>
+   			<input id="password" name="password" type="password">
+    </fieldset>
+
+    <fieldset>
+    	<legend>OS Preference</legend>
+
+    	<label  for="os_macos">OSX</label>
+    	<input id="os_macos" name="osp[]" value="OSX" type="checkbox">
+
+    	<label for="os_windows">Windows</label>
+    	<input id="os_windows" name="osp[]" value="Windows" type="checkbox">
+
+
+
+    </fieldset>
+   			
+    
+   			<input type="submit">
+   			<input type="reset">
+   		</form>
+    </body>
+</html>
+
+
+
