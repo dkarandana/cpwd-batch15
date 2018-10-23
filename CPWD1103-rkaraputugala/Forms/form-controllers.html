@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+			<form action="http://www.pace.lk/form-data.php" method="get">
+			<fieldset>
+				<legend>Personal Details</legend>
+				<label for="f_name">First Name</label>
+				<input id="f_name" name="first_name" type="text">
+
+				<label for="l_name">Last name</label>
+				<input id="l_name" name="last_name" type="text">
+
+				Gender
+				<label for="male">Male</label>
+				<input id="male"  type="radio" name="gender" value="male" checked>
+
+				<label for="female">Female</label>
+				<input id="female" type="radio" name="gender" value="female">
+			</fieldset>
+			
+			<fieldset> <!-- includes the rulers -->
+				<legend>Credentials</legend>
+				<label for="password">Password</label>
+				<input id="password" type="Password" name="Password">
+			</fieldset>
+			
+			<fieldset>
+				<legend></legend>
+				<label for="macosx">OSX</label>
+				<input id="macosx" type="checkbox" name="osp[]" value="osx">
+
+				<label for="oswindows">windows</label>
+				<input id="oswindows" type="checkbox" name="osp[]" value="windows">
+
+				<label for="oslinux">Linux</label>
+				<input id="oslinux" type="checkbox" name="osp[]" value="Linux">
+			</fieldset>
+
+
+				<input type="submit">
+				<input type="reset">
+			</form>
+		</body>
+</html>

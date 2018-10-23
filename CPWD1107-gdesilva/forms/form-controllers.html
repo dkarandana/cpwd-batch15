@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Form Controller</title>
+</head>
+<body>
+	<form action="http:\\www.pace.lk/form-data.pp" method="get">
+
+		<fieldset>
+			<legend>Personal Data</legend>
+				<label for="firstname">First Name</label>
+				<input id="firstname" type="text" name="firstname">
+		
+				<label for="lastname">Last Name</label>
+				<input id="lastname" type="text" name="lastname">
+
+		</fieldset>
+
+		<fieldset>
+			<legend>OS Preference</legend>
+
+			<label for="os_macos" name="ops[]" value="osx" type="checkbox">
+			<input type="" name="">
+
+		</fieldset>
+		
+
+		<label for="password">Password</label>
+		<input id="password" type="password" name="password">
+
+		Gender
+		<label for="gender_male">Male</label>
+		<input id="gender_male" name="gender" type="radio" value="male">
+
+		<label for="gender_female">Female</label>
+		<input id="gender_female" name="gender" type="radio" value="female">
+
+		<input type="submit">
+		<input type="reset">
+
+	</form>
+</body>
+</html>
