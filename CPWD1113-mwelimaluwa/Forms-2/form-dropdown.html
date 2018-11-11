@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title> Test</title>
+    </head>
+
+   <body>
+   		<form action="hhtp://www.pace.lk/form-data.php" method="post">
+   	<fieldset>
+   		<legend>Personal Details</legend>
+   			<label for="firstname">First Name </label>
+   			<input placeholder="First Name" id="firstname" name="firstname" type="text">
+
+   			<label for="lastname">Last Name</label>
+   			<input placeholder="Last Name" id="lastname" name="lastname" type="text">
+
+   			Gender
+   			<label for="gender_male">Male</label>
+   			<input id="gender_male" checked name="gender" type="radio" value="male">
+
+   			<label for="gender_female">Female</label>
+   			<input id="gender_female" name="gender" type="radio" value="female">
+    </fieldset>
+
+    <fieldset>
+    	<legend>Credentials</legend>
+   			<label for="password">password </label>
+   			<input placeholder="Enter your password" id="password" name="password" type="password">
+    </fieldset>
+
+    <fieldset>
+    	<legend>OS Preference</legend>
+
+    	<label  for="os_macos">OSX</label>
+    	<input id="os_macos" name="osp[]" value="OSX" type="checkbox">
+
+    	<label for="os_windows">Windows</label>
+    	<input id="os_windows" name="osp[]" value="Windows" type="checkbox">
+    </fieldset>
+   	<fieldset>
+    <legend>Student Account</legend>
+    <select name="batch_number">
+    <optgroup label="Beginners">
+      <option value="batch_01">Batch 01</option>
+      <option value="batch_02">Batch 02</option>
+      <option value="batch_03" disabled>Batch 03</option>
+      <option value="batch_04" selected>Batch 04</option>
+      <option value="batch_05">Batch 05</option>
+      <!--from value attribute, the value will be added to the server side-->
+    </optgroup>
+    <optgroup label="Advanced">
+      <option value="Advanced_01">Advanced_01</option>
+      <option value="Advanced_02">Advanced_02</option>
+    </optgroup>
+    
+    </select>
+    </fieldset>
+
+    <input type="file" name="upload">
+        <input type="submit" value="submit">
+        <input type="reset">
+    <textarea placeholder="Write your comment" name="comment" cols="15" rows="10">          
+    </textarea>
+    <a href="mailto:rlonjr89@gmail.com?cc=mdw99@yahoo.com&bcc=marlonwelimaluwa@gmail.com">Give us a feedback</a>
+    <a href="tel:+94774744056">Call Marlon</a>
+  </form>
+
+    </body>
+</html>

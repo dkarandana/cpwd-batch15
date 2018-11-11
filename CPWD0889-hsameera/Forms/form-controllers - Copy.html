@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<!--Method can be use as GET and POST -->
+		<form action="http://www.pace.lk/form-data.php" method=post>
+			<!--Get can see the request and Post cant see-->
+			<fieldset>
+			
+				<legend>Personal Details</legend>
+				
+				<label for="firstname">First Name</label>
+				<input id="firstname" name="first_name" type="text"
+				
+				<label for="lastname">Last Name</label>
+				<input id="lastname" name="last_name" type="text">
+				
+				<label for="gender_male">Male</label>
+				<input id="gender_male" name="gender" type="radio" value="male">
+				
+				<label for="gender_female">Female</label>
+				<input id="gender_female" name="gender" type="radio" value="female">
+				
+				<input type="submit">
+				<input type="reset">
+			
+			</fieldset>
+			 
+			<fieldset>
+			
+				<legend>Credentials</legend>
+			
+				<label for="password">Password</label>
+				<input id="password" name="password" type="password">
+			
+			</fieldset>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Form Controllers</title>
+	</head>
+	<Body>
+		<form action="http://www.pace.lk/form-data.php" method="get">
+			
+			<fieldset>
+				<legend>Personal Data</legend>
+			<!--Name-->
+				<label for=f_name>First Name</label>
+				<input id="f_name" name="first_name" type="text" placeholder="First Name">
+				
+				<label for=l_name>Last Name</label>
+				<input id="l_name" name="last_name" type="text" placeholder="Last Name">
+			
+			<!--Gender Section-->
+				<label for=gender_male>Male</label>
+				<input id="gender_male" checked name="gender" type="radio" value="male">
+
+				<label for=gender_female>Female</label>
+				<input id="gender_female" name="gender" type="radio" value="female">
+			</fieldset>
+			
+			
+			<fieldset>
+			<!--Credentials-->
+				<legend>Credentials</legend>
+				<label for=password>Password</label>
+				<input id="password" name="password" type="password">
+			</fieldset>
+
+			<fieldset>
+				<legend>OS Preference</legend>
+
+				<label for="os_macos">OSX</label>
+				<input id="os_macos" name=osp[] type="checkbox" value="osx">
+
+				<label for="os_aws">AWS</label>
+				<input id="os_aws" name=osp[] type="checkbox" value="aws">
+
+				<label for="os_linux">Linux</label>
+				<input id="os_linux" name=osp[] type="checkbox" value="linux">
+
+
+			</fieldset>
+			
+			<fieldset>
+				<legend>Batch Number</legend>
+				
+				<label for="bnumber">Select Batch Number</label>
+				<select id="bnumber" name="batch_number">
+				
+					<optgroup label="Beginners">
+						<option value="batch_01">Batch 01</option>
+						<option value="batch_o2" disabled>Batch 02</option>
+						<option value="batch_03">Batch 03</option>
+						<option value="batch_04">Batch 04</option>
+						<option value="batch_05" selected>Batch 05</option>
+					</optgroup>
+					
+					<optgroup label="Advanced">
+						<option value="batch_advprg_01">Advanced Class 1</option>
+						<option value="batch_advprg_02">Advanced Class 2</option>
+						<option value="batch_advprg_03">Advanced Class 3</option>
+					</optgroup>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Text Area</legend>
+				<textarea name="comment" rows="5" cols="50" placeholder="Write Your Comment">
+				</textarea>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Upload your File</legend>
+				<input type="file"></input>
+			</fieldset>
+			
+			
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+			
+			
+		</form>
+		
+		<a href="tel:+9477123456">Call Nishan</a>
+		<a href="mailto:nishan56838@gmail.com?cc=nishan56838@live.com;nishan56838@ymail.com&bcc=harsha56838@gmail.com&subject=Student%20FeedBack&body=Write%20Your%20FeedBack">Send Feedback</a>
+		
+		
+	</Body>
+</html>

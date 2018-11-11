@@ -1,0 +1,271 @@
+header {
+    background-color:lightgrey;
+    padding: 20px;
+    height: 110px;
+    color:rebeccapurple;
+    margin-top:0;
+    
+}
+
+div.wrap h1{
+    font-size: 40px;
+    align:center; 
+}
+div.wrap h2{
+    font-size: 25px;
+    align:center; 
+}
+
+
+
+
+
+div.search{
+    position: absolute;
+    top:10%;
+    left: 80%;
+   
+}
+
+.searchButton {
+    position: absolute;  
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus{
+    color: #00B4CC;
+  }
+
+
+
+
+
+.searchTerm:focus{
+    color: #00B4CC;
+}
+
+/* Nav link*/
+
+div.nav{
+    width:100%;
+    background: #1a1a75;
+    height:101px;
+    left:3;
+    margin-top:0px;
+    opacity: 0.6;
+}
+
+ul {
+list-style: none;
+padding:0;
+margin:0;
+position: absolute; 
+}
+
+li{
+    float: left;
+    margin-top: 30px;
+}
+
+a{
+    width: 150px;
+    color: white;
+    display: block;
+    text-align:center;
+    padding: 10px;
+    border: radius 10px;
+    font-family:Segoe UI;
+    font-weight:bold;
+}
+a:hover{
+    background:#74284b;
+    transition: 0.3s;
+}
+
+/*sidebar*/
+
+div.sidebar{
+    height: 100%;
+  width: 508px;
+  position: absolute;
+  z-index: 1;
+  top: 30;
+  left: 1;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+
+  div.sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .main {
+    margin-left: 500px; 
+    padding: 1px 10px;
+}
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  div.Wvideo{
+    height: 84%;
+  width: 510px;
+  position: absolute;
+  z-index:1;
+  top:2;
+  left: 1;
+  background-color: #00B4CC;
+  overflow-x: hidden;
+  margin-top:0px;
+  padding-top: 50px;
+  
+}
+
+/*tab div class*/
+div.Dtabs{
+    height: 90%;
+  width: 740px;
+  position: absolute;
+  z-index: 1;
+  top: 40;
+  left: 600;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+  float: right;
+  margin-left:508px; 
+  padding: 0px 0px;
+ border: 0%;
+}
+
+/*tabs*/
+.tabs input[type=radio] {
+    position: absolute;
+    top: 0px;
+    left: -9999px;
+}
+.tabs {
+  width: 650px;
+  float: left;
+  list-style: none;
+  position: relative;
+  padding: 1;
+  margin: 2px auto;
+  
+}
+.tabs li{
+  float: left;
+}
+.tabs label {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 2px 2px 0 0;
+    color: #08C;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Lily Script One', helveti;
+    background: rgba(255,255,255,0.2);
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    left :1;
+}
+.tabs label:hover {
+  background: rgba(255,255,255,0.5);
+  top: 0;
+}
+ 
+[id^=tab]:checked + label {
+  background: #08C;
+  color: white;
+  top: 1;
+}
+ 
+[id^=tab]:checked ~ [id^=tab-content] {
+    display: block;
+}
+.tab-content{
+  z-index: 2;
+  display: none;
+  text-align: left;
+  width: 100%;
+  font-size: 20px;
+  line-height: 140%;
+  padding-top: 20px;
+  background: #08C;
+  padding: 15px;
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  box-sizing: border-box;
+  -webkit-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+/*feedback*/
+div.feedback{
+    height: 41%;
+  width: 258px;
+  position: absolute;
+  z-index: 1;
+  top: 70;
+  float: right;
+  background-color:rgb(178, 133, 204);
+  overflow-x: hidden;
+  padding-top: 11px;
+  padding-left: 5%;
+  margin-left:508px; 
+  margin-top: 31.7%
+
+  
+  
+}
+.footer {
+    position: absolute;;
+    left: 1;
+    bottom: 0;
+
+    width: 99%;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    text-align: center;
+    top: 9;
+    margin-bottom: -50.5%;
+ }

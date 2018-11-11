@@ -11,10 +11,10 @@
 				<legend>Personal Details</legend>
 				
 				<label for="firstname">First Name</label>
-				<input id="firstname" name="first_name" type="text"
+				<input placeholder="First Name" id="firstname" name="first_name" type="text"
 				
 				<label for="lastname">Last Name</label>
-				<input id="lastname" name="last_name" type="text">
+				<input placeholder="Last Name"id="lastname" name="last_name" type="text">
 				
 				<label for="gender_male">Male</label>
 				<input id="gender_male" name="gender" type="radio" value="male">
@@ -26,15 +26,50 @@
 				<input type="reset">
 			
 			</fieldset>
+			<fieldset>
+				<legend>OS Preference</legend>
+				
+			
+			
+			
+			</fieldset>
 			 
 			<fieldset>
 			
 				<legend>Credentials</legend>
 			
 				<label for="password">Password</label>
-				<input id="password" name="password" type="password">
+				<input placeholder="*****" id="password" name="password" type="password">
 			
 			</fieldset>
+			<fieldset>
+				<legend>Student CPWD Account</legend>
+				<select name="batch_number">
+					<optgroup label="Beginners">
+					<option value="batch_01">Batch 01</option>
+					<option value="batch_02">Batch 02</option>
+					<option value="batch_03">Batch 03</option>
+					<option value="batch_04">Batch 04</option>
+					<option value="batch_05">Batch 05</option>
+					</optgroup>
+					<optgroup label="Advanced">
+					<option value="batch_01">Batch 01</option>
+					<option value="batch_02">Batch 02</option>
+					<option value="batch_03">Batch 03</option>
+					</optgroup>
+				</select>
+			</fieldset>
+			
+			<!--browse a file and upload button-->
+			<input type="file"><br/>
+			
+			
+			<!--report a bug or give feedback via Email-->
+			<a href="mailto:bugreport@ubuntu.com?cc=support@ubuntu.com&bcc=dev@ubuntu.com&subject=Bug%20Report&body=report%20here">Report a Bug<a>
+			<!--when site open in mobile device its easy to take call-->
+			<br/>
+			<a href="tel:+94123456789">Call a Developer</a>
+			
 		</form>
 	</body>
 </html>
