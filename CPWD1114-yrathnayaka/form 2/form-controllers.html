@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<form action="http://www.pace.lk/form-data.php" methos="get">
+
+			<fieldset>
+				<legend>Personal Data</legend>
+			<label for="first_name">  First name</label>
+			<input placeholder="First Name" id="first_name"  name="first name" type="text">
+
+			<label for="Last_name" >Last Name</label>
+			<input id="Last_name" name="Last name" type="text">
+			<!--gender section-->
+			Gender
+			<label for="gender_male" >male</label>
+			<input id="gender_male" name="gender" type="radio" value="male">
+
+			<label for="gender_female" >male</label>
+			<input id="gender_female" name="gender" type="radio" value="female">
+			</fieldset>
+
+			<fieldset>
+				<legend>Credentials</legend>
+
+			<label for="password"> password</label>
+			<input id="password" name="password" type="password">
+			</fieldset>
+
+			<fieldset>
+				<legend>CPWD Account</legend>
+			<select name="batch_number">
+			<optgroup label="beginners">
+				<option value="batch_01">Batch 01</option>
+				<option value="batch_02">Batch 02</option>
+				<option value="batch_03" disabled>Batch 03</option>
+				<option value="batch_04" selected>Batch 04</option>
+				<option value="batch_05">Batch 05</option>
+			</optgroup>
+
+			<optgroup name="advanced">
+				<option value="batch_ad_01">Advanced class 01</option>
+				<option value="batch_ad_02">Advanced class 01</option>
+			</optgroup>
+
+			</select>
+			</fieldset>
+			<input type="file">
+			<input type="hidden" name="hotrl_id" value="cinnamon_lake">
+
+			<textarea name="comment" cols="65"  rows="10">	
+			</textarea>
+
+
+			<input type="reset" value="Rest">
+
+			<a href="mailto:anomayuresha13@gmail.com?cc=yresha2012@gmail.com&bcc">submit a feedback</a>
+			<a href="tel:0719030098">call me</a>
+			<input type="image">
+
+		</form>
+	</body>
+</html>

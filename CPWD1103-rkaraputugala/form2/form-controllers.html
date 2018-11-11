@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+			<form action="http://www.pace.lk/form-data.php" method="get">
+				<input type="hidden" name="hotel_id" value="cinnamon grand">
+			<fieldset>
+				<legend>Personal Details</legend>
+				<label for="f_name">First Name</label>
+				<input id="f_name" name="first_name" type="text" placeholder="first name">
+
+				<label for="l_name">Last name</label>
+				<input id="l_name" name="last_name" type="text">
+
+				Gender
+				<label for="male">Male</label>
+				<input id="male"  type="radio" name="gender" value="male" checked>
+
+				<label for="female">Female</label>
+				<input id="female" type="radio" name="gender" value="female">
+			</fieldset>
+			
+			<fieldset> <!-- includes the rulers -->
+				<legend>Credentials</legend>
+				<label for="password">Password</label>
+				<input id="password" type="Password" name="Password">
+			</fieldset>
+			
+			<fieldset>
+				<legend></legend>
+				<label for="macosx">OSX</label>
+				<input id="macosx" type="checkbox" name="osp[]" value="osx">
+
+				<label for="oswindows">windows</label>
+				<input id="oswindows" type="checkbox" name="osp[]" value="windows">
+
+				<label for="oslinux">Linux</label>
+				<input id="oslinux" type="checkbox" name="osp[]" value="Linux"> <br><br>
+					<fieldset>
+						<legend>Student Batch numbers</legend>
+						<select name="batch_name">
+							<optgroup label="beginners">
+								<option value="batch_01">Batch 01</option>
+								<option value="batch_02" disabled>Batch 02</option>
+								<option value="batch_03">Batch 03</option>
+								<option value="batch_04" selected>Batch 04</option>
+							</optgroup>
+							<optgroup label="advanced">
+								<option value="batch_ad_01">advance class 01</option>
+								<option value="batch_ad_02" >advance class 02</option>
+							</optgroup>
+						</select> <br><br>
+						<textarea name="comment" cols="65" rows="10" placeholder="write your comment here"></textarea>
+						<input type="file"><br>
+
+					</fieldset>
+			</fieldset>
+
+				<input type="submit" value="GO">
+				<input type="reset">
+
+			</form> <br><br><br>
+				<a href="tel:+94770308810">CALL</a><br>
+				<a href="mailto:ruwanyasumin@gmail.com?cc=desilvaruvi@gmail.com&bcc=sample@gmail.com;second@gmail.com&subject=FeedBack%20form&body=Enter%20your%20feedback%20here">Click here to type your mail</a>
+
+		</body>
+</html>
